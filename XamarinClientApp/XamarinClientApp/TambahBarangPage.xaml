@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.TambahBarangPage">
+
+  <StackLayout>
+    <ScrollView  Orientation = "Vertical">
+      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Label Text="Kode Barang :" />
+        <Entry x:Name="txtKodeBarang" Placeholder="Masukan Kode Barang"/>
+        <Label Text="ID Jenis Motor :" />
+        <Entry x:Name="txtIDJenisMotor" Placeholder="Masukan ID Jenis Motor"/>
+        <Label Text="Kategori ID :" />
+        <Entry x:Name="txtKategoriID" Placeholder="Masukan ID Kategori"/>
+        <Label Text="Nama Barang :" />
+        <Entry x:Name="txtNamaBarang" Placeholder="Masukan Nama Barang"/>
+        <Label Text="Stok Barang :" />
+        <Entry x:Name="txtStokBarang" Placeholder="Masukan Stok Barang"/>
+        <Label Text="Harga Beli :" />
+        <Entry x:Name="txtHargaBeli" Placeholder="Masukan Harga Beli"/>
+        <Label Text="Harga Jual :" />
+        <Entry x:Name="txtHargaJual" Placeholder="Masukan Harga Jual"/>
+        <Label Text="Tanggal Beli :" />
+        <Entry x:Name="txtTglBeli" Placeholder="Masukan Tanggal Beli"/>
+        <Button x:Name="btnTambahBarang" Text="Tambah" />
+      </StackLayout>
+    </ScrollView>
+  </StackLayout>
+</ContentPage>

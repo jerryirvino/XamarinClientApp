@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.JenisMotorPage">
+
+  <StackLayout>
+    <ListView x:Name="listJenisMotor" ItemsSource="{Binding ListJenisMotor}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding IdJenisMotor}"
+                    Detail="{Binding NamaMerk}" DetailColor="Red" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+      <Button x:Name="btnTambah" Text="Tambah" BackgroundColor="Aqua" />
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

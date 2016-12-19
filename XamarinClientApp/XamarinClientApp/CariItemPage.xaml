@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.CariItemPage">
+
+  <ContentPage.Content>
+    <StackLayout>
+      <Label XAlign="Center" Font="10"> Pencarian Berdasarkan Nama Barang </Label>
+      <Switch x:Name="switcer" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <Entry x:Name="txtSearch" Placeholder="Insert Nama" />
+      <Button x:Name="btnSearch" Text="Search" />
+      <ListView x:Name="listBarang" ItemsSource="{Binding ListBarang}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding KodeBarang}"
+                      Detail="{Binding Nama}" DetailColor="Red" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
